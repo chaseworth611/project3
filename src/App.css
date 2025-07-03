@@ -1,4 +1,43 @@
 .App {
+  max-width: 500px;
+  margin: 48px auto;
+  padding: 2.5em 2em 2em 2em;
+  background: linear-gradient(135deg, #f8fafc 0%, #e3f6fc 100%);
+  border-radius: 16px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  box-shadow: 0 8px 32px rgba(0, 128, 128, 0.10);
+  border: 2px solid #b6e0fe;
+  text-align: center;
+}
+
+input {
+  padding: 0.5em;
+  width: 70%;
+  margin-right: 0.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,128,128,0.04);
+  padding: 0.75em 1em;
+  border: 1px solid #e3f6fc;
+  justify-content: space-between;
+}
+
+.App {
   text-align: center;
 }
 
@@ -35,4 +74,93 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  margin-top: 1em;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7em;
+  border: 1px solid #b6e0fe;
+  border-radius: 6px;
+  background: #f8fafc;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #007b8a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+  padding: 0.7em 1.2em;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+.contact-form button:hover {
+  background: #005f6b;
+}
+
+.alert-success {
+  background: #e6fff2;
+  color: #007b8a;
+  border: 1px solid #b6e0fe;
+  border-radius: 6px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+::-webkit-input-placeholder { color: #b6e0fe; }
+::-moz-placeholder { color: #b6e0fe; }
+:-ms-input-placeholder { color: #b6e0fe; }
+::placeholder { color: #b6e0fe; }
+
+.badge.bg-info {
+  background: #e3f6fc !important;
+  color: #007b8a !important;
+  font-weight: 500;
+  font-size: 0.95em;
+  border-radius: 6px;
+  padding: 0.4em 0.8em;
+}
+
+.list-group-item-success {
+  background: #e6fff2 !important;
+  color: #007b8a !important;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #b6e0fe;
+  margin-bottom: 2em;
+}
+
+.nav-tabs .nav-link {
+  color: #007b8a;
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #e3f6fc !important;
+  color: #007b8a !important;
+  border-bottom: 3px solid #007b8a !important;
 }
